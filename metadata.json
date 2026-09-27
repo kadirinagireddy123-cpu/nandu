@@ -1,0 +1,6 @@
+{
+  "name": "SmartBus - College Bus Tracking System",
+  "description": "Live GPS tracking, route schedules, bus stop arrival times, and ETA calculations for college transit.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

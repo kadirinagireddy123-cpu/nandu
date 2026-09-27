@@ -23,7 +23,7 @@ export const RoutesView: React.FC = () => {
             College Transit Routes
           </h2>
           <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
-            Official BITM college transport schedules, designated pick-up stops, and live bus allocations.
+            Official RYMEC college transport schedules, designated pick-up stops, and live bus allocations.
           </p>
         </div>
         <div className="flex items-center gap-2">

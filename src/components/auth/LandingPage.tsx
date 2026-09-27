@@ -26,13 +26,13 @@ export const LandingPage: React.FC = () => {
   const handleOpenLogin = (role: 'student' | 'admin' | 'driver') => {
     setTargetRole(role);
     if (role === 'student') {
-      setEmailOrId('student@bitm.edu.in');
-      setPassword('bitm2026');
+      setEmailOrId('student@rymec.in');
+      setPassword('rymec2026');
     } else if (role === 'admin') {
-      setEmailOrId('admin@bitm.edu.in');
+      setEmailOrId('admin@rymec.in');
       setPassword('admin2026');
     } else {
-      setEmailOrId('driver.ramesh@bitm.edu.in');
+      setEmailOrId('driver.ramesh@rymec.in');
       setPassword('driver2026');
     }
     setLoginModalOpen(true);
@@ -57,11 +57,11 @@ export const LandingPage: React.FC = () => {
               <div className="flex items-center gap-1.5">
                 <span className="font-bold text-lg tracking-tight">SmartBus</span>
                 <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300">
-                  BITM
+                  RYMEC
                 </span>
               </div>
               <p className="text-[10px] text-slate-500 dark:text-slate-400 -mt-0.5">
-                Ballari Institute of Technology & Management
+                Rao Bahadur Y. Mahabaleswarappa Engineering College
               </p>
             </div>
           </div>
@@ -167,7 +167,7 @@ export const LandingPage: React.FC = () => {
                   </div>
                   <div>
                     <span className="text-xs font-bold text-slate-900 dark:text-white block">
-                      BUS-101 (Ballari → BITM)
+                      BUS-101 (Ballari → RYMEC)
                     </span>
                     <span className="text-[11px] text-emerald-600 font-semibold">
                       Approaching Cowl Bazaar
@@ -238,7 +238,7 @@ export const LandingPage: React.FC = () => {
 
       {/* Footer */}
       <footer className="border-t border-slate-200 dark:border-slate-800 py-6 text-center text-xs text-slate-500">
-        <p>© 2026 SmartBus · Ballari Institute of Technology and Management (BITM)</p>
+        <p>© 2026 SmartBus · Rao Bahadur Y. Mahabaleswarappa Engineering College (RYMEC), Ballari</p>
       </footer>
 
       {/* Student/Admin Login Modal */}
@@ -252,7 +252,7 @@ export const LandingPage: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-sm font-bold capitalize">{targetRole} Authentication</h3>
-                  <p className="text-[11px] text-slate-400">BITM Transport Prototype Portal</p>
+                  <p className="text-[11px] text-slate-400">RYMEC Transport Prototype Portal</p>
                 </div>
               </div>
               <button
@@ -275,7 +275,7 @@ export const LandingPage: React.FC = () => {
                     required
                     value={emailOrId}
                     onChange={(e) => setEmailOrId(e.target.value)}
-                    placeholder="student@bitm.edu.in"
+                    placeholder="student@rymec.in"
                     className="w-full pl-9 pr-3 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl outline-none focus:border-blue-500 font-mono text-xs"
                   />
                 </div>

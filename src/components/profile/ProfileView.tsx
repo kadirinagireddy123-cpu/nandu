@@ -47,7 +47,7 @@ export const ProfileView: React.FC = () => {
         {/* Background watermark shapes */}
         <div className="absolute -right-8 -bottom-8 w-44 h-44 rounded-full bg-white/5 pointer-events-none" />
         <div className="absolute right-12 top-4 text-white/10 font-bold text-6xl select-none">
-          BITM
+          RYMEC
         </div>
 
         <div className="relative z-10 flex flex-col sm:flex-row sm:items-center justify-between gap-5">

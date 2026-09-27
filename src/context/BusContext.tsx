@@ -301,7 +301,7 @@ export const BusProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     addNotification({
       busId,
       title: `${busId} Trip Completed`,
-      message: `The bus has arrived at the destination terminal (BITM College).`,
+      message: `The bus has arrived at the destination terminal (RYMEC College).`,
       type: 'info',
     });
   };

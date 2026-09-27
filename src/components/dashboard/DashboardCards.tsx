@@ -152,7 +152,7 @@ export const DashboardCards: React.FC = () => {
           <div className="flex items-center justify-between text-slate-500 dark:text-slate-400 pt-1 border-t border-slate-100 dark:border-slate-800/80">
             <span className="text-slate-400">Terminal:</span>
             <span className="font-medium text-slate-700 dark:text-slate-300">
-              BITM College
+              RYMEC College
             </span>
           </div>
           <div className="text-[11px] text-slate-400 truncate">

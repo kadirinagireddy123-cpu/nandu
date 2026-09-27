@@ -178,7 +178,7 @@ export const NotificationsView: React.FC = () => {
                 <div className="flex items-center gap-3 mt-2 text-[11px] text-slate-400 font-mono">
                   <span>Target: {item.busId}</span>
                   <span>·</span>
-                  <span>Delivered via BITM SmartBus Gateway</span>
+                  <span>Delivered via RYMEC SmartBus Gateway</span>
                 </div>
               </div>
             </div>

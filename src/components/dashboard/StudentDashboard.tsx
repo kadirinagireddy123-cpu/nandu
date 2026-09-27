@@ -65,7 +65,7 @@ export const StudentDashboard: React.FC = () => {
 
           <div className="flex items-center gap-2 text-xs">
             <span className="font-mono text-slate-500 dark:text-slate-400 hidden sm:inline">
-              Target: <strong className="text-slate-800 dark:text-slate-200">BITM College</strong>
+              Target: <strong className="text-slate-800 dark:text-slate-200">RYMEC College</strong>
             </span>
           </div>
         </div>

@@ -56,7 +56,7 @@ export const MapView: React.FC<MapViewProps> = ({
     if (!mapContainerRef.current) return;
 
     try {
-      // Default center around Ballari / BITM
+      // Default center around Ballari / RYMEC
       const initialLat = selectedBus ? selectedBus.currentLocation.lat : 15.1432;
       const initialLng = selectedBus ? selectedBus.currentLocation.lng : 76.9000;
 
@@ -143,7 +143,7 @@ export const MapView: React.FC<MapViewProps> = ({
             <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
           </div>
           <span class="absolute -bottom-6 bg-slate-900 text-white font-medium text-[10px] px-2 py-0.5 rounded shadow whitespace-nowrap">
-            BITM College
+            RYMEC College
           </span>
         </div>`
         : `

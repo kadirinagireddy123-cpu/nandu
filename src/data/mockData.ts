@@ -1,14 +1,15 @@
 import { Bus, BusRoute, AppNotification, StudentProfile } from '../types/bus';
 
-// Route 1: Ballari Bus Stand → BITM College
+// RYMEC Ballari Campus Coordinates: Lat 15.1595, Lng 76.8925 (Cantonment, Ballari)
+// Route 1: Ballari Bus Stand → RYMEC College
 export const ROUTE_A: BusRoute = {
   id: 'route-101',
   code: 'Route A',
-  name: 'Ballari Bus Stand → BITM College',
+  name: 'Ballari Bus Stand → RYMEC College',
   startPoint: 'Ballari Bus Stand',
-  endPoint: 'BITM College Campus',
-  totalDistanceKm: 14.8,
-  estimatedTotalMinutes: 38,
+  endPoint: 'RYMEC College Campus',
+  totalDistanceKm: 8.6,
+  estimatedTotalMinutes: 24,
   stops: [
     {
       id: 'stop-101-1',
@@ -36,47 +37,45 @@ export const ROUTE_A: BusRoute = {
     },
     {
       id: 'stop-101-4',
-      name: 'Kudatini Road Junction',
-      coordinates: { lat: 15.1510, lng: 76.8820 },
-      scheduledTime: '08:35 AM',
+      name: 'Cantonment Circle',
+      coordinates: { lat: 15.1535, lng: 76.8938 },
+      scheduledTime: '08:33 AM',
       status: 'Upcoming',
-      landmark: 'Near Highway Petro Stop',
+      landmark: 'Railway Station Road Cross',
     },
     {
       id: 'stop-101-5',
-      name: 'BITM College Campus',
-      coordinates: { lat: 15.1550, lng: 76.8720 },
-      scheduledTime: '08:48 AM',
+      name: 'RYMEC College Campus',
+      coordinates: { lat: 15.1595, lng: 76.8925 },
+      scheduledTime: '08:42 AM',
       status: 'Destination',
-      landmark: 'BITM Main Academic Block Gate',
+      landmark: 'RYMEC Main Arch & Admin Block Gate',
     },
   ],
   waypoints: [
-    { lat: 15.1432, lng: 76.9248 },
+    { lat: 15.1432, lng: 76.9248 }, // Ballari Bus Stand
     { lat: 15.1420, lng: 76.9215 },
     { lat: 15.1405, lng: 76.9170 },
     { lat: 15.1385, lng: 76.9120 }, // Cowl Bazaar
     { lat: 15.1412, lng: 76.9065 },
     { lat: 15.1440, lng: 76.9015 },
     { lat: 15.1470, lng: 76.8965 }, // Infantry Road
-    { lat: 15.1488, lng: 76.8905 },
-    { lat: 15.1502, lng: 76.8850 },
-    { lat: 15.1510, lng: 76.8820 }, // Kudatini Road Junction
-    { lat: 15.1528, lng: 76.8780 },
-    { lat: 15.1542, lng: 76.8745 },
-    { lat: 15.1550, lng: 76.8720 }, // BITM College
+    { lat: 15.1505, lng: 76.8950 },
+    { lat: 15.1535, lng: 76.8938 }, // Cantonment Circle
+    { lat: 15.1565, lng: 76.8930 },
+    { lat: 15.1595, lng: 76.8925 }, // RYMEC College Campus
   ],
 };
 
-// Route 2: Hospet → BITM College
+// Route 2: Hospet → RYMEC College
 export const ROUTE_B: BusRoute = {
   id: 'route-102',
   code: 'Route B',
-  name: 'Hospet → BITM College',
+  name: 'Hospet → RYMEC College',
   startPoint: 'Hospet KSRTC Circle',
-  endPoint: 'BITM College Campus',
-  totalDistanceKm: 34.2,
-  estimatedTotalMinutes: 52,
+  endPoint: 'RYMEC College Campus',
+  totalDistanceKm: 32.4,
+  estimatedTotalMinutes: 48,
   stops: [
     {
       id: 'stop-102-1',
@@ -106,17 +105,17 @@ export const ROUTE_B: BusRoute = {
       id: 'stop-102-4',
       name: 'Kudatini Town',
       coordinates: { lat: 15.1610, lng: 76.8280 },
-      scheduledTime: '08:42 AM',
+      scheduledTime: '08:40 AM',
       status: 'Upcoming',
       landmark: 'Old Police Station Stand',
     },
     {
       id: 'stop-102-5',
-      name: 'BITM College Campus',
-      coordinates: { lat: 15.1550, lng: 76.8720 },
-      scheduledTime: '08:58 AM',
+      name: 'RYMEC College Campus',
+      coordinates: { lat: 15.1595, lng: 76.8925 },
+      scheduledTime: '08:55 AM',
       status: 'Destination',
-      landmark: 'BITM North Gate',
+      landmark: 'RYMEC Campus North Gate',
     },
   ],
   waypoints: [
@@ -127,20 +126,20 @@ export const ROUTE_B: BusRoute = {
     { lat: 15.1850, lng: 76.6580 },
     { lat: 15.1720, lng: 76.7450 },
     { lat: 15.1610, lng: 76.8280 },
-    { lat: 15.1575, lng: 76.8520 },
-    { lat: 15.1550, lng: 76.8720 },
+    { lat: 15.1598, lng: 76.8650 },
+    { lat: 15.1595, lng: 76.8925 },
   ],
 };
 
-// Route 3: Siruguppa Road → BITM College
+// Route 3: Siruguppa Road → RYMEC College
 export const ROUTE_C: BusRoute = {
   id: 'route-103',
   code: 'Route C',
-  name: 'Siruguppa Road → BITM College',
+  name: 'Siruguppa Road → RYMEC College',
   startPoint: 'Siruguppa Highway Bypass',
-  endPoint: 'BITM College Campus',
-  totalDistanceKm: 18.5,
-  estimatedTotalMinutes: 40,
+  endPoint: 'RYMEC College Campus',
+  totalDistanceKm: 16.2,
+  estimatedTotalMinutes: 35,
   stops: [
     {
       id: 'stop-103-1',
@@ -176,11 +175,11 @@ export const ROUTE_C: BusRoute = {
     },
     {
       id: 'stop-103-5',
-      name: 'BITM College Campus',
-      coordinates: { lat: 15.1550, lng: 76.8720 },
+      name: 'RYMEC College Campus',
+      coordinates: { lat: 15.1595, lng: 76.8925 },
       scheduledTime: '08:45 AM',
       status: 'Destination',
-      landmark: 'BITM Main Academic Block Gate',
+      landmark: 'RYMEC Main Academic Block Gate',
     },
   ],
   waypoints: [
@@ -191,8 +190,8 @@ export const ROUTE_C: BusRoute = {
     { lat: 15.1480, lng: 76.9180 },
     { lat: 15.1495, lng: 76.9065 },
     { lat: 15.1510, lng: 76.8950 },
-    { lat: 15.1530, lng: 76.8835 },
-    { lat: 15.1550, lng: 76.8720 },
+    { lat: 15.1550, lng: 76.8935 },
+    { lat: 15.1595, lng: 76.8925 },
   ],
 };
 
@@ -206,7 +205,7 @@ export const INITIAL_BUSES: Bus[] = [
     driverName: 'Ramesh Kumar',
     driverPhone: '+91 98452 11204',
     routeId: 'route-101',
-    routeName: 'Ballari → BITM College',
+    routeName: 'Ballari → RYMEC College',
     status: 'ON TIME',
     currentSpeed: 35,
     passengers: 38,
@@ -229,7 +228,7 @@ export const INITIAL_BUSES: Bus[] = [
     driverName: 'Suresh Patil',
     driverPhone: '+91 94481 33491',
     routeId: 'route-102',
-    routeName: 'Hospet → BITM College',
+    routeName: 'Hospet → RYMEC College',
     status: 'DELAYED',
     currentSpeed: 28,
     passengers: 44,
@@ -252,7 +251,7 @@ export const INITIAL_BUSES: Bus[] = [
     driverName: 'Basavaraj Hiremath',
     driverPhone: '+91 97412 88730',
     routeId: 'route-103',
-    routeName: 'Siruguppa → BITM College',
+    routeName: 'Siruguppa → RYMEC College',
     status: 'ON TIME',
     currentSpeed: 40,
     passengers: 31,
@@ -275,7 +274,7 @@ export const INITIAL_BUSES: Bus[] = [
     driverName: 'Anil Reddy',
     driverPhone: '+91 99805 44211',
     routeId: 'route-101',
-    routeName: 'Ballari → BITM College (Express)',
+    routeName: 'Ballari → RYMEC College (Express)',
     status: 'MAINTENANCE',
     currentSpeed: 0,
     passengers: 0,
@@ -298,7 +297,7 @@ export const INITIAL_BUSES: Bus[] = [
     driverName: 'Mohammed Rafi',
     driverPhone: '+91 98450 77123',
     routeId: 'route-101',
-    routeName: 'Cantonment Circular → BITM College',
+    routeName: 'Cantonment Circular → RYMEC College',
     status: 'ON TIME',
     currentSpeed: 32,
     passengers: 42,
@@ -306,7 +305,7 @@ export const INITIAL_BUSES: Bus[] = [
     currentLocation: { lat: 15.1470, lng: 76.8965 },
     currentLocationName: 'Infantry Road',
     nextStopId: 'stop-101-4',
-    nextStopName: 'Kudatini Road Junction',
+    nextStopName: 'Cantonment Circle',
     etaMinutes: 9,
     distanceToNextKm: 2.8,
     lastUpdated: '5 seconds ago',
@@ -347,8 +346,8 @@ export const INITIAL_NOTIFICATIONS: AppNotification[] = [
   {
     id: 'notif-4',
     busId: 'BUS-101',
-    title: 'BITM Destination ETA',
-    message: 'Your bus is on schedule to reach BITM College campus by 08:48 AM.',
+    title: 'RYMEC Destination ETA',
+    message: 'Your bus is on schedule to reach RYMEC College campus by 08:42 AM.',
     timestamp: '22 mins ago',
     type: 'arrival',
     read: true,
@@ -358,9 +357,9 @@ export const INITIAL_NOTIFICATIONS: AppNotification[] = [
 export const DEMO_STUDENT: StudentProfile = {
   id: 'std-2026-448',
   name: 'Nagireddy K.',
-  studentId: '3BR22CS089',
-  email: 'student@bitm.edu.in',
-  college: 'BITM - Ballari Institute of Technology and Management',
+  studentId: '3VC22CS089',
+  email: 'student@rymec.in',
+  college: 'RYMEC - Rao Bahadur Y. Mahabaleswarappa Engineering College, Ballari',
   department: 'Computer Science & Engineering',
   year: '3rd Year (6th Sem)',
   favoriteBusId: 'BUS-101',

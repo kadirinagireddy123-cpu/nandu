@@ -132,7 +132,7 @@ export const Sidebar: React.FC = () => {
         <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200/80 dark:border-slate-800 text-xs">
           <div className="flex items-center justify-between mb-2">
             <span className="font-semibold text-slate-800 dark:text-slate-200">
-              BITM Campus Fleet
+              RYMEC Campus Fleet
             </span>
             <span className="flex h-2 w-2 relative">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
@@ -147,7 +147,7 @@ export const Sidebar: React.FC = () => {
             <div className="flex justify-between">
               <span>Destination:</span>
               <span className="text-slate-700 dark:text-slate-300 truncate max-w-[110px]">
-                BITM Campus
+                RYMEC Campus
               </span>
             </div>
           </div>
